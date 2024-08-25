@@ -80,13 +80,16 @@ def start(update: Update, context):
 def help_command(update: Update, context):
     response = "ℹ️ **Anime Bot Help**\n\n1. Use '/start' to begin the adventure.\n2. Type the name of an anime (e.g., 'naruto') to get a link on Telegram.\n3. Use '/search' to search for an anime. Example: '/search naruto'."
     context.bot.send_message(chat_id=update.effective_chat.id, text=response)
-
+    
+def hi_command(update: Update, context):
+    response = "hiiiii"
 def main():
     updater = Updater(API_KEY, use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help_command))
+    dp.add_handler(CommandHandler("hi", hi_command))
     
     updater.start_polling()
     updater.idle()
