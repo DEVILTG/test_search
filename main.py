@@ -3,7 +3,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CommandHandler, MessageHandler, Filters, CallbackQueryHandler, Updater
 
 # Replace this with your bot's API key
-API_KEY = 'YOUR_TELEGRAM_BOT_API_KEY'
+API_KEY = '1535629893:AAGVZey0Otk_c28NfEw7HDcl99eFmmVutKk'
 MONGO_DB_URL = 'https://ap-south-1.aws.data.mongodb-api.com/app/data-xluhn/endpoint/data/v1'
 
 def store_user_details(user):
