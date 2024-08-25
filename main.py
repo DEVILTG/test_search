@@ -83,6 +83,9 @@ def help_command(update: Update, context):
     
 def hi_command(update: Update, context):
     response = "hiiiii"
+    context.bot.send_message(chat_id=update.effective_chat.id, text=response)
+
+
 def main():
     updater = Updater(API_KEY, use_context=True)
     dp = updater.dispatcher
